@@ -1,8 +1,10 @@
 require_relative 'load_api'
 
+
+
 # change twitter user to get their tweets
-def grab_tweets()
-  tweets = @client.user_timeline('jeremycorbyn', count: 20)
+def grab_tweets(user)
+  tweets = @client.user_timeline(user, count: 20)
   tweets.each do |tweet|
     puts tweet.full_text
     line = tweet.full_text
