@@ -1,5 +1,9 @@
 Judge-Twitter-People
 
+## No Longer Needed
+
+This mini app is no longer needed as we found another way to gather large amounts of catagorised data for our machine learning project. No further updates will be made to this repo.
+
 ### Installation instructions
 
 * git clone https://github.com/allthatilk/judge-twitter-people.git
@@ -26,10 +30,6 @@ This app when loaded via pry or irb will provide the tweets of a given user and 
 
 Call the load_api method and then grab_tweets(insert_your_user_id_without_'@'here). This will show a tweet and await your input. Type 'p' for positive and 'n' for negative to assign the tweet to the relevant file.
 
-## Future improvements
 
-Access latest tweets from random users or allow to specify user via method without having to reload your REPL.
 
-## Updates
 
-The pos.txt and neg.txt files will no longer be updated to protect user info. The current info is from public personalities and demonstrates how the app works.

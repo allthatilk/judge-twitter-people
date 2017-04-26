@@ -1,9 +1,7 @@
 require_relative 'load_api'
 
-
-
 # change twitter user to get their tweets
-def grab_tweets(user)
+def grab_user_tweets(user)
   tweets = @client.user_timeline(user, count: 20)
   tweets.each do |tweet|
     puts tweet.full_text
@@ -11,6 +9,10 @@ def grab_tweets(user)
     string = gets.chomp
     judge(string, line)
   end
+end
+
+def grab_topic_tweets(topic)
+  
 end
 
 def judge(string, line)
